@@ -7,6 +7,7 @@ export default function Home() {
     <div className="bg-slate-50">
       <HeroSection />
       <CustomerReviews />
+      
       <div className="pt-16">
         <AnimatedReviews />
       </div>

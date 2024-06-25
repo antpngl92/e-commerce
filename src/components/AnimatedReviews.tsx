@@ -4,7 +4,7 @@ import MaxWidthWrapper from './MaxWidthWrapper'
 import Phone from './Phone'
 import { PHONES } from '@lib/const'
 import { cn, splitArray } from '@lib/utils'
-import { AnimatedReviewProps } from '@lib/types'
+import { AnimatedReviewProps, ReviewColumProps } from '@lib/types'
 import { useInView } from 'framer-motion'
 
 
@@ -13,12 +13,7 @@ const ReviewColumn = ({
   className, 
   reviewClassName, 
   msPerPixel = 0
-}: {
-  reviews: Array<string>,
-  className?: string,
-  reviewClassName?: (reviewIndex: number) => string,
-  msPerPixel?: number
-  }) => {
+}: ReviewColumProps) => {
   const columnRef = useRef<HTMLDivElement | null>(null)
   const [columnHeight, setColumnHeight] = useState(0)
   const duration = `${columnHeight * msPerPixel}ms`
@@ -115,7 +110,6 @@ const AnimatedReviews = () => {
   return (
     <MaxWidthWrapper className='relative max-w-5xl'>
       <img aria-hidden src="/what-people-are-buying.png" className='absolute select-none hidden xl:block -left-32 top-1/3' />
-    
       <AnimatedReviewGrid />
     </MaxWidthWrapper>
   )
