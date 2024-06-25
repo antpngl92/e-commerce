@@ -3,7 +3,7 @@ import React, { HTMLAttributes } from 'react'
 
 interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
   imgSrc: string
-  className: string
+  className?: string
   dark?: boolean
 }
 
