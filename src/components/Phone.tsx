@@ -1,11 +1,5 @@
 import { cn } from '@lib/utils'
-import React, { HTMLAttributes } from 'react'
-
-interface PhoneProps extends HTMLAttributes<HTMLDivElement> {
-  imgSrc: string
-  className?: string
-  dark?: boolean
-}
+import { PhoneProps } from '@lib/types'
 
 const Phone = ({
   imgSrc, 
