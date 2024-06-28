@@ -108,7 +108,7 @@ const AnimatedReviewGrid = () => {
 
 const AnimatedReviews = () => {
   return (
-    <MaxWidthWrapper className='relative max-w-5xl'>
+    <MaxWidthWrapper className='relative max-w-5xl pt-16'>
       <img aria-hidden src="/what-people-are-buying.png" className='absolute select-none hidden xl:block -left-32 top-1/3' />
       <AnimatedReviewGrid />
     </MaxWidthWrapper>
