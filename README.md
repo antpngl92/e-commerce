@@ -25,6 +25,10 @@
 - ⌨️ 100% written in TypeScript
 - 🎁 ...much more
 
+## Third-party services
+
+- [File Uploads For Next.js Developers](https://uploadthing.com/) `(FREE)` - paid alternatives: Amazon S3 bucket or CloudFlare R2
+
 ## Quick Start
 
 Follow these steps to set up the project locally on your machine.
