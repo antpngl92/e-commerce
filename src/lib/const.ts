@@ -5,7 +5,7 @@ export const PHONES = [
   "/testimonials/4.jpg",
   "/testimonials/5.jpg",
   "/testimonials/6.jpg",
-];
+] as const;
 
 export const CUSTOMER_REVIEWS = [
   {
@@ -24,4 +24,17 @@ export const CUSTOMER_REVIEWS = [
     name: "Josh",
     customerImageUrl: "/users/user-4.jpg",
   },
-];
+] as const;
+
+export const PRODUCT_PRICES = {
+  material: {
+    silicone: 0,
+    polycarbonate: 5_00,
+  },
+  finish: {
+    smooth: 0,
+    textured: 3_00,
+  },
+} as const;
+
+export const BASE_PRICE = 15_00;
