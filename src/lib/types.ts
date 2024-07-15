@@ -23,3 +23,18 @@ export interface ReviewColumProps {
   reviewClassName?: (reviewIndex: number) => string;
   msPerPixel?: number;
 }
+
+export interface PageProps {
+  searchParams: {
+    [key: string]: string | string[] | undefined;
+  };
+}
+
+export interface DesignConfiguratorProps {
+  configId: string;
+  imageUrl: string;
+  imageDimensions: {
+    width: number;
+    height: number;
+  };
+}
